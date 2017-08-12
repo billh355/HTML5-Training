@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drop-Down Menu</title>
+
+    <style type="text/css">
+        /* To make older browser HTML5 aware */
+
+        header,
+        nav,
+        aside,
+        article,
+        footer {
+            display: block;
+        }
+        /* Top level menu bar */
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, Sans-Serif;
+            font-size: 12pt;
+            color: black;
+        }
+        /* Each list item inside horizontal menu bar */
+
+        nav ul li {
+            float: left;
+            width: 20%;
+            position: relative;
+            z-index: 10;
+        }
+        /* Text and links across navbar */
+
+        nav span,
+        nav a {
+            /* Preload two background images */
+            background: url(pix2/navback2.png) repeat-x,
+            url(pix2/navhover2.png) repeat-x;
+            text-decoration: none;
+            outline: none;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Unvisited/visited links in horizontal bar */
+
+        nav a:link,
+        nav a:visited {
+            background: url(pix2/navback2.png) repeat-x;
+            color: black;
+        }
+        /* Hovering over list item in top menu bar */
+
+        nav ul li:hover a,
+        nav ul li:hover span {
+            background: url(pix2/navhover2.png) repeat-x;
+            color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+
+            <li>
+                <span>Top 2</span>
+                <ul>
+                    <li><a href="#">Sub 2-1</a></li>
+                    <li><a href="#">Sub 2-2</a></li>
+                    <li><a href="#">Sub 2-3</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Top 3</span>
+                <ul>
+                    <li><a href="#">Sub 3-1</a></li>
+                    <li><a href="#">Sub 3-2</a></li>
+                    <li><a href="#">Sub 3-3</a></li>
+                    <li><a href="#">Sub 3-4</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Top 4</span>
+                <ul>
+                    <li><a href="#">Sub 4-1</a></li>
+                    <li><a href="#">Sub 4-2</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Top 5</span>
+                <ul>
+                    <li><a href="#">Sub 5-1</a></li>
+                    <li><a href="#">Sub 5-2</a></li>
+                    <li><a href="#">Sub 5-3</a></li>
+                    <li><a href="#">Sub 5-4</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
