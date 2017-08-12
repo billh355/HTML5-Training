@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nav Practice</title>
+
+    <style type="text/css">
+        /* Make HTML5 layout elements block elements for older browsers */
+        header,
+        nav,
+        aside,
+        article,
+        footer,
+        section {
+            display: block;
+        }
+
+        /* Style for <a> tags in the nav section */
+        nav a {
+            background: url(pix2/navback.png) center repeat-x, url(pix2/navhover.png) center repeat-x;
+            color: white;
+            text-decoration: none;
+            outline: none;
+            padding: 10px 0;
+            display: block;
+            float: left;
+            border-right: solid 1px silver;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 20%;
+            text-align: center;
+            box-sizing: border-box;
+            /* Box sizing for older browsers */
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        /* Unvisited and visited link styling */
+        nav a:link,
+        nav a:visited {
+            background: url(pix2/navback.png);
+        }
+
+        /* Styling for hover, tap, and currentpage */
+        nav a:hover, nav a:active, nav a.currentpage {
+            background: url(pix2/navhover.png);
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //Make older browsers aware of new HTML5 layout tags 
+        'header nav aside article footer section'.replace(/\w+/g, function (n) { document.createElement(n) })
+    </script>
+    <!-- Navigation bar -->
+    <nav>
+        <a href="#" class="currentpage">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+    </nav>
+</body>
+
+</html>
